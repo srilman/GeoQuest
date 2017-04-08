@@ -1,7 +1,6 @@
 package com.srinul.geoquest.activity;
 
 import android.app.FragmentManager;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -73,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.nav_map) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new MapFragement()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new FragmentMap()).commit();
         } else if (id == R.id.nav_puzzles) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new PuzzleFragment()).commit();
         } else if (id == R.id.nav_settings) {
