@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:id="@+id/Settings "
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_weight="1"
+    android:baselineAligned="false">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="190dp"
+        android:layout_height="57dp"
+        android:layout_weight="0.48"
+        android:text="Sound"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="114dp"
+        android:layout_height="55dp"
+        android:allowUndo="false"
+        android:text="ToggleButton" />
 
 </LinearLayout>
